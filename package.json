@@ -1,0 +1,15 @@
+{
+  "name": "gr15_pj1_id023_058_069_077",
+  "version": "1.0.0",
+  "description": "README",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "mysql2": "^3.2.0",
+    "nodemon": "^2.0.22"
+  }
+}
