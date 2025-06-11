@@ -154,35 +154,6 @@ npm start
   - Phone Number: 098-821-9918
   - Point: 4
 
-## 🗄️ โครงสร้าง Database
-
-### ตาราง Admin
-- Admin_ID
-- Firstname
-- Surname
-- Email
-- Username
-- Job_Titles
-- Password
-
-### ตาราง AuditTrail
-- Admin_ID
-- Firstname
-- Login_Time
-
-### ตาราง ManageContent
-- Restaurant_ID
-- Restaurant_Name
-- Day
-- Open
-- Close
-- Address
-- Phone_No
-- Point
-- Category
-- Content
-- Pic1-Pic7
-
 ## 📁 โครงสร้างไฟล์
 
 ```
