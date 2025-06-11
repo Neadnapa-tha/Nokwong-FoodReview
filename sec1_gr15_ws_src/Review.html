@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- เปลี่ยนรูปเเบบฟ้อนภาษาไทย -->
+    <!-- Sriracha font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Chakra+Petch&family=Sriracha&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- IBM font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Chakra+Petch&family=IBM+Plex+Sans+Thai&family=Mali&family=Sriracha&display=swap"
+        rel="stylesheet">
+
+    <title> Search </title>
+    <!-- <link rel="stylesheet" href="Home&Search.css"> -->
+    <!-- <link rel="stylesheet" href="Page_5_Review_Css.css"> -->
+    <script src="JavaScript.js"></script>
+
+
+    <!-- Navbar -->
+    <style>
+        body {
+            font-family: 'Aboreto', cursive;
+            font-family: 'Chakra Petch', sans-serif;
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            font-family: 'Mali', cursive;
+            font-family: 'Sriracha', cursive;
+        }
+
+        .navbaraaa {
+            background-color: #3D3D3D;
+            height: 100%;
+        }
+
+        h4 {
+            margin-bottom: 2%;
+        }
+
+        .nav-bar-review {
+            text-align: center;
+            margin-top: 4%;
+        }
+
+        .navbaraaa ul a {
+            color: #ffffff;
+            margin-top: -20px;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .navbaraaa ul a:hover {
+            color: #b4b4b4;
+        }
+
+        .reviews {
+            color: #FFBF00;
+        }
+
+        .navbaraaa button {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+
+        .text-end :hover {
+            background-color: #E00707;
+            color: whitesmoke;
+        }
+
+        .navbaraaa img {
+            margin-top: -18px;
+        }
+
+        .card-text {
+            font-family: 'Sriracha', cursive;
+        }
+
+        .btn-group {
+            font-family: 'Aboreto', cursive;
+            font-family: 'Chakra Petch', sans-serif;
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            font-family: 'Mali', cursive;
+            font-family: 'Sriracha', cursive;
+        }
+
+        main .container {
+            margin-top: 10px;
+        }
+
+
+        .carousel-control-prev {
+            color: rgb(28, 133, 162);
+        }
+
+        #myInput {
+            background-image: url('/css/searchicon.png');
+            /* Add a search icon to input */
+            background-position: 10px 12px;
+            /* Position the search icon */
+            background-repeat: no-repeat;
+            /* Do not repeat the icon image */
+            width: 100%;
+            /* Full-width */
+            font-size: 16px;
+            /* Increase font-size */
+            padding: 12px 20px 12px 40px;
+            /* Add some padding */
+            border: 1px solid #ddd;
+            /* Add a grey border */
+            margin-bottom: 12px;
+            /* Add some space below the input */
+        }
+
+        #find {
+            margin-left: 90%;
+            border: 1px solid #ddd;
+            /* Add a grey border */
+        }
+
+        #myUL {
+            /* Remove default list styling */
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #myUL li a {
+            border: 1px solid #ddd;
+            /* Add a border to all links */
+            margin-top: -1px;
+            /* Prevent double borders */
+            background-color: #f6f6f6;
+            /* Grey background color */
+            padding: 12px;
+            /* Add some padding */
+            text-decoration: none;
+            /* Remove default text underline */
+            font-size: 18px;
+            /* Increase the font-size */
+            color: black;
+            /* Add a black text color */
+            display: block;
+            /* Make it into a block element to fill the whole list */
+        }
+
+        #myUL li a:hover:not(.header) {
+            background-color: #eee;
+            /* Add a hover effect to all links, except for headers */
+        }
+    </style>
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* picture */
+        .P1 {
+            display: block;
+            opacity: 0.95;
+            /* ค.สว่าง */
+            width: 650px;
+            height: 551px;
+            margin-left: 5%;
+            margin-right: auto;
+            margin-bottom: 2%;
+        }
+
+        .P2 {
+            display: block;
+            margin-left: 2px;
+            opacity: 0.95;
+            /* ค.สว่าง */
+            width: 325px;
+            height: 275px;
+
+        }
+
+        .P3 {
+            display: block;
+            margin-left: 2px;
+            opacity: 0.95;
+            /* ค.สว่าง */
+            width: 325px;
+            height: 275px;
+        }
+
+        .P4 {
+            display: block;
+            margin-left: 2px;
+            opacity: 0.95;
+            /* ค.สว่าง */
+            width: 325px;
+            height: 275px;
+            margin-bottom: 2%;
+            margin-top: 0.1%;
+
+        }
+
+        .P5 {
+            display: block;
+            margin-left: 2px;
+            opacity: 0.95;
+            /* ค.สว่าง */
+            width: 325px;
+            height: 275px;
+            margin-bottom: 2%;
+            margin-top: 0.1%;
+        }
+
+        img {
+            float: left;
+
+        }
+
+        .container1 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        /* information */
+        .box-intro {
+            background-color: whitesmoke;
+            padding: 2%;
+            width: 77%;
+            color: black;
+            font-family: 'Aboreto', cursive;
+            font-family: 'Chakra Petch', sans-serif;
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            font-family: 'Mali', cursive;
+            font-family: 'Sriracha', cursive;
+            margin-left: 10%;
+            margin-right: auto;
+            margin-bottom: 5%;
+            border-radius: 10px;
+        }
+
+        /* contect */
+        .Contact {
+            font-family: 'Aboreto', cursive;
+            font-family: 'Chakra Petch', sans-serif;
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            font-family: 'Mali', cursive;
+            font-family: 'Sriracha', cursive;
+            font-size: 30%;
+            font-size: 1rem;
+        }
+
+        .storeInfo_wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 5%;
+        }
+
+        .storeInfo_item {
+            padding: 1.5%;
+            text-align: center;
+            border-radius: 10px;
+            width: 15%;
+            background-color: whitesmoke;
+        }
+
+        /* picture_home */
+
+        /* Sriracha font */
+        .font_p1_in_pic {
+            font-family: 'Aboreto', cursive;
+            font-family: 'Chakra Petch', sans-serif;
+            font-family: 'Sriracha', cursive;
+            color: whitesmoke;
+        }
+
+        /* IBM font */
+        .font_p1_in_infor_pic {
+            font-family: 'Aboreto', cursive;
+            font-family: 'Chakra Petch', sans-serif;
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            font-family: 'Mali', cursive;
+            font-family: 'Sriracha', cursive;
+            color: whitesmoke;
+
+        }
+
+        .font_infor {
+            font-family: 'Aboreto', cursive;
+            font-family: 'Chakra Petch', sans-serif;
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            font-family: 'Mali', cursive;
+            font-family: 'Sriracha', cursive;
+            color: black;
+            margin-left: 0%;
+            margin-right: 0%;
+            width: 30%;
+            text-align: center;
+        }
+
+        .restaurant_name {
+            margin: 500%;
+        }
+
+        .head {
+            font-family: 'Aboreto', cursive;
+            font-family: 'Chakra Petch', sans-serif;
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            font-family: 'Mali', cursive;
+            font-family: 'Sriracha', cursive;
+            color: black;
+            text-align: center;
+        }
+
+        .home-section {
+            position: relative;
+        }
+
+        .home-section::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 600%;
+            width: 600%;
+            opacity: 0.6;
+            z-index: -1;
+            background-color: black;
+        }
+
+        .home-text {
+            text-align: center;
+            width: 100%;
+        }
+
+        .row {
+            margin: 25px;
+        }
+
+        /* comment */
+        .comment {
+            margin-left: 25%;
+            width: 400px;
+            background-color: #292929;
+            padding: 10px 20px;
+            border: 5px;
+            border: solid;
+            border-color: #292929;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+        .comment .star input {
+            display: none;
+            /* วงกลมหาย */
+        }
+
+        .star label {
+            font-size: 20px;
+            color: #444;
+            padding: 10px;
+            float: right;
+            transition: all 0.2s ease;
+        }
+
+        input:not(:checked)~label:hover,
+        input:not(:checked)~label:hover~label {
+            color: #fd4;
+        }
+
+        input#rate-5:checked~label {
+            color: #fe7;
+            text-shadow: 0 0 20px #952;
+        }
+
+        form header {
+            width: 100%;
+            font-size: 25px;
+            color: #fe7;
+            font-weight: 500;
+            margin: 5px 0 20px 0;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+
+        form .textarea {
+            height: 100px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        form .textarea textarea {
+            height: 100%;
+            width: 100%;
+            outline: none;
+            border: 1px solid #333;
+            background: #222;
+            padding: 10px;
+            font-size: 17px;
+            resize: none;
+            color: black;
+        }
+
+        .font_comment {
+            font-family: 'Aboreto', cursive;
+            font-family: 'Chakra Petch', sans-serif;
+            font-family: 'IBM Plex Sans Thai', sans-serif;
+            font-family: 'Mali', cursive;
+            font-family: 'Sriracha', cursive;
+        }
+
+
+        /* review */
+        .all {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Aboreto', cursive;
+            font-family: 'Chakra Petch', sans-serif;
+            font-family: 'Sriracha', cursive;
+            box-sizing: border-box;
+            /* เป็นเหมือนการคำนวณค่าของความกว้างมาโดยอัตโนมัติ ex.ถ้ากำหนด width:200px เเต่ความจิง width ที่กำหนดก็คือ width of content*/
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #testimonials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .testimonial-heading {
+            display: flex;
+            letter-spacing: 1px;
+            /* กำหนดขนาดความห่างของเเต่ละตัวอักษร */
+            margin: 30px 0px;
+            /* margin 30px(top and bottom), margin 0px(right and left)*/
+            padding: 10px 20px;
+            /* padding 10px(top and bottom), padding 20px(right and left)*/
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .testimonial-heading h4 {
+            margin-top: 20px;
+            margin-bottom: 35px;
+            font-size: 2.2rem;
+            font-weight: 500;
+            background-color: #292929;
+            color: aliceblue;
+            padding: 10px 20px;
+        }
+
+        .testimonial-heading span {
+            font-size: 1.3rem;
+            color: #252525;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .testimonial-box-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .testimonial-box {
+            width: 500px;
+            box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            padding: 20px;
+            margin: 15px;
+            cursor: pointer;
+        }
+
+        .profile-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 10px;
+        }
+
+        .profile-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+
+        }
+
+        .name-user {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .name-user strong {
+            color: #3d3d3d;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+
+        .name-user span {
+            color: #979797;
+            font-size: 0.8rem;
+        }
+
+        .reviews {
+            color: #f9d71c;
+        }
+
+        .box-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .client-comment article {
+            font-size: 0.9rem;
+            color: #4b4b4b;
+        }
+
+        .testimonial-box:hover {
+            transform: translate(-10px);
+            /* ทำให้เคลื่อนไหวได้ */
+            transition: all ease 0.3s;
+        }
+
+        @media(max-width: 1060px) {
+            .testimonial-box {
+                width: 45%;
+                padding: 10px;
+            }
+
+            .comment {
+                width: 55%;
+                padding: 10px;
+                align-items: center;
+            }
+
+            .comment .star input {
+                display: none;
+                /* วงกลมหาย */
+            }
+
+            .star label {
+                display: flex;
+                flex-wrap: wrap;
+                font-size: 20px;
+                color: #f9d71c;
+                padding: 5%;
+                float: right;
+            }
+        }
+
+        @media(max-width: 790px) {
+            .testimonial-box {
+                width: 100%;
+            }
+
+            .testimonial-heading h4 {
+                font-size: 1.4rem;
+            }
+
+            .comment {
+                width: 55%;
+                padding: 10px;
+                align-items: center;
+            }
+
+            .new {
+                margin: 2%;
+                padding: 5%;
+            }
+        }
+
+        @media(max-width: 340px) {
+            .box-top {
+                flex-wrap: wrap;
+                margin-bottom: 10px;
+            }
+
+            .reviews {
+                margin-top: 10px;
+            }
+
+            .comment {
+                width: 55%;
+                padding: 10px;
+                align-items: center;
+            }
+        }
+
+        @media(max-width: 2000px) {
+            .comment {
+                width: 55%;
+                padding: 10px;
+                align-items: center;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="navbaraaa">
+            <div class="px-3 py-2 border-bottom mb-3">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/Search">Search Restaurant</a></li>
+                        <li><a href="/RecipeMenu">Food Menu</a></li>
+                        <li><a href="/AboutUs">AboutUs</a></li>
+                    </ul>
+
+                    <div class="text-end">
+                        <a href="/Login"><button type="button" class="btn">Login</button></a>
+                        <a href="/Register"><button type="button" class="btn">Sign-up</button></a>
+                    </div>
+                </div>
+            </div>
+            <!--<a href="Homepage.html"><img src="/Picture/logo_background3.jpg" width="100%"></a>-->
+        </div>
+
+
+    </nav>
+    <br>
+
+    <div id="any">
+
+    </div>
+
+    <script type="application/javascript">
+        const urlParams = new URLSearchParams(window.location.search);
+        console.log(urlParams);
+        const greetingValue = urlParams.get('name');
+        console.log(greetingValue);
+        //document.getElementById("any").innerHTML = greetingValue;
+        //document.querySelector('#any').innerHTML = greetingValue;
+
+
+        let url = "http://localhost:3000/Find_Restaurant_Name/" + greetingValue;
+        fetch(url)
+            .then(response => response.json())
+            .then(results => {
+                let a = " "
+                for (let j in results) {
+                    document.title = results[j].Restaurant_Name;
+                    a += `
+        <section class="home-section">
+        <div class="home-bg">
+            <style>
+                .home-section .home-bg {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 600%;
+                    height: 600%;
+                    background-image: url(${results[j].Pic2});
+                    background-attachment: fixed;
+                    /* ภาพไม่เลื่อนไปด้วย */
+                    background-size: cover;
+                    background-position: center;
+                    z-index: -2;
+                    /* คล้ายๆกับการปรับความมืดของ background-color ที่กำหนดไว้ข้างบน*/
+                }
+            </style>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="home-text">
+                    <h1 class="font_p1_in_pic">${results[j].Restaurant_Name}</h1>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+            <tr class="container1">
+            <td>
+                <img src=${results[j].Pic3} class="P1">
+            </td>
+            <td>
+                <img src=${results[j].Pic4}  class="P2">
+            </td>
+            <td>
+                <img src=${results[j].Pic5}  class="P3">
+            </td>
+            <td>
+                <img src=${results[j].Pic6}  class="P4">
+            </td>
+            <td>
+                <img src=${results[j].Pic7}  class="P5">
+            </td>
+        </tr>
+
+    </section>
+    <section>
+        <article class="font_infor">
+            <h2 claas="restaurant_name">${results[j].Restaurant_Name}</h2>
+        </article>
+    </section>
+
+    <br>
+        <section class="box-intro">
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${results[j].Content}</p>
+        </section>
+    </div>
+
+    <section id="storeInfo">
+        <div class="Contact">
+            <div class="storeInfo_wrapper">
+                <div class="storeInfo_item">
+                    <div class="storeInfo_icon">
+                        <i class="fa fa-hourglass-start"></i>
+                    </div>
+                    <p>
+                    <h6 class="storeInfo_title">
+                        ${results[j].Day}<br> ${results[j].Open} - ${results[j].Close}
+                    </h6>
+                    </p>
+                    <p class="storeInfo_text">
+                    <h5>เวลาเปิด - ปิด</h5>
+                    </p>
+                </div>
+
+
+                <div class="storeInfo_item">
+                    <div class="storeInfo_icon">
+                        <i class='fas fa-map-marker-alt'></i>
+                    </div>
+                    <p>
+                    <h6 class="storeInfo_title">
+                        ${results[j].Address}
+                    </h6>
+                    </p>
+                    <p class="storeInfo_text">
+                    <h5>ที่อยู่</h5>
+                    </p>
+                </div>
+
+                <div class="storeInfo_item">
+                    <div class="storeInfo_icon">
+                        <i class='fas fa-mobile-alt'></i>
+                        <p>
+                        <h6 class="storeInfo_title">
+                            ${results[j].Phone_No}
+                        </h6>
+                        </p>
+                        <p class="storeInfo_text">
+                        <h5>โทร</h5>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="comment">
+        <div class="star">
+            <input type="radio" name="rate" id="rate-5">
+            <label for="rate-5" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-4">
+            <label for="rate-4" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-3">
+            <label for="rate-3" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-2">
+            <label for="rate-2" class="fas fa-star"></label>
+            <input type="radio" name="rate" id="rate-1">
+            <label for="rate-1" class="fas fa-star"></label>
+            <from action="#">
+                <header class="font_p1_in_infor_pic">ความคิดเห็น</header>
+                <div class="textarea">
+                    <textarea cols="30" placeholder="ข้อความ" class="font_comment"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit" class="font_infor">โพสต์</button>
+                </div>
+            </from>
+        </div>
+    </section>
+   `
+                }
+                console.log(results)
+                document.querySelector('#any').innerHTML = a;
+            })
+            .catch((error) => console.log(error));
+
+    </script>
+
+
+    <section id="testimonials">
+        <div class="all">
+
+            <div class="testimonial-heading">
+                <!-- span(inline element) คล้ายกับ div(block-level) -->
+                <span>ความคิดเห็น</span>
+                <h4>ความคิดเห็นเเละคะเเนน</h4>
+            </div>
+
+            <div class="testimonial-box-container">
+
+                <!-- Box 1 -->
+                <div class="testimonial-box">
+
+                    <!-- Top -->
+                    <div class="box-top">
+                        <!-- Profile -->
+                        <div class="profile">
+                            <!-- img -->
+                            <div class="profile-img">
+                                <a href="https://ibb.co/RzjzqMs"><img src="https://i.ibb.co/jgJgSxQ/bean.jpg"
+                                        alt="bean" /></a>
+                            </div>
+                            <!-- name -->
+                            <div class="name-user">
+                                <strong>Bean </strong>
+                                <span>@Mr.Bean</span>
+                            </div>
+                        </div>
+
+                        <!-- Review -->
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+
+                    <!-- comment -->
+                    <div class="client-comment">
+                        <article>
+                            เเซ่บอีหลี 🤯
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Box 2 -->
+                <div class="testimonial-box">
+
+                    <!-- second -->
+                    <div class="box-top">
+                        <!-- Profile -->
+                        <div class="profile">
+                            <!-- img -->
+                            <div class="profile-img">
+                                <a href="https://imgbb.com/"><img src="https://i.ibb.co/k9qCRCh/chinjung.jpg"
+                                        alt="chinjung"></a>
+                            </div>
+                            <!-- name -->
+                            <div class="name-user">
+                                <strong>Chinjung </strong>
+                                <span>@Chinjung</span>
+                            </div>
+                        </div>
+
+                        <!-- Review -->
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <!-- far = empty -->
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+
+                    <!-- comment -->
+                    <div class="client-comment">
+                        <article>
+                            อร่อยมาก ๆ เลยนะหน้ากากแอ็คชั่น 🦾
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Box 3 -->
+                <div class="testimonial-box">
+
+                    <!-- third -->
+                    <div class="box-top">
+                        <!-- Profile -->
+                        <div class="profile">
+                            <!-- img -->
+                            <div class="profile-img">
+                                <a href="https://imgbb.com/"><img src="https://i.ibb.co/R7K5FY1/image.jpg"
+                                        alt="image" /></a>
+                            </div>
+                            <!-- name -->
+                            <div class="name-user">
+                                <strong>James&Pangkung</strong> <!-- strong ตัวหนา -->
+                                <span>@James&Pangkung</span>
+                            </div>
+                        </div>
+
+                        <!-- Review -->
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+
+                    <!-- comment -->
+                    <div class="client-comment">
+                        <article>
+                            Oishii 🐒 🐶
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Box 4 -->
+                <div class="testimonial-box">
+
+                    <!-- four -->
+                    <div class="box-top">
+                        <!-- Profile -->
+                        <div class="profile">
+                            <!-- img -->
+                            <div class="profile-img">
+                                <a href="https://imgbb.com/"><img src="https://i.ibb.co/B3CwQmL/image.jpg"
+                                        alt="image" /></a>
+                            </div>
+                            <!-- name -->
+                            <div class="name-user">
+                                <strong>Mom </strong>
+                                <span>@Mom</span>
+                            </div>
+                        </div>
+
+                        <!-- Review -->
+                        <div class="reviews">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+
+                    <!-- comment -->
+                    <div class="client-comment">
+                        <article>
+                            เเม่รับรองว่าออร่อยทุกเมนูเลยนะ 💕
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+
+
+</body>
+
+</html>

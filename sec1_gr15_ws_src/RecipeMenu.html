@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <!-- <meta name='viewport' content='width=device-width, initial-scale=1'> -->
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <!-- เปลี่ยนรูปเเบบฟ้อนภาษาไทย -->
+  <!-- Sriracha font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Chakra+Petch&family=Sriracha&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- IBM font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aboreto&family=Chakra+Petch&family=IBM+Plex+Sans+Thai&family=Mali&family=Sriracha&display=swap"
+    rel="stylesheet">
+
+  <title> Search Recipe Menu </title>
+  <link rel="stylesheet" href="Home&Search.css">
+  <link rel="stylesheet" href="/public/Home&Search.css">
+</head>
+
+<body>
+  <nav>
+    <div class="navbaraaa">
+        <div class="px-3 py-2 border-bottom mb-3">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/Search">Search Restaurant</a></li>
+                    <li><a href="/RecipeMenu">Food Menu</a></li>
+                    <li><a href="/AboutUs">AboutUs</a></li>
+                </ul>
+                
+                <div class="text-end">
+                    <a href="/Login"><button type="button" class="btn">Login</button></a>
+                    <a href="/Register"><button type="button" class="btn">Sign-up</button></a>
+                </div>
+            </div>
+        </div>
+        <!--<a href="Homepage.html"><img src="/Picture/logo_background3.jpg" width="100%"></a>-->
+    </div>
+
+
+</nav>
+
+  <div class="container">
+    <div class="meal-wrapper">
+      <div class="meal-search">
+        <h4 class="title"> Find the Menu you are interested in. </h4>
+        <h6> You can search by the name of the menu. </h6>
+
+        <div class="meal-search-box">
+          <input type="text" class="search-control" placeholder="Search for menu" id="search-input">
+          <button type="submit" class="search-btn btn" id="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="meal-result">
+        <h4 class="title">Your Search Results:</h4>
+        <div id="meal">
+          <!-- meal item -->
+          <!-- <div class = "meal-item">
+            <div class = "meal-img">
+              <img src = "food.jpg" alt = "food">
+            </div>
+            <div class = "meal-name">
+              <h3>Potato Chips</h3>
+              <a href = "#" class = "recipe-btn">Get Recipe</a>
+            </div>
+          </div> -->
+          <!-- end of meal item -->
+        </div>
+      </div>
+
+
+      <div class="meal-details">
+        <!-- recipe close btn -->
+        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- meal content -->
+        <div class="meal-details-content">
+          <!-- <h2 class = "recipe-title">Meals Name Here</h2>
+          <p class = "recipe-category">Category Name</p>
+          <div class = "recipe-instruct">
+            <h3>Instructions:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo blanditiis quis accusantium natus! Porro, reiciendis maiores molestiae distinctio veniam ratione ex provident ipsa, soluta suscipit quam eos velit autem iste!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aliquam voluptatibus ad obcaecati magnam, esse numquam nisi ut adipisci in?</p>
+          </div>
+          <div class = "recipe-meal-img">
+            <img src = "food.jpg" alt = "">
+          </div>
+          <div class = "recipe-link">
+            <a href = "#" target = "_blank">Watch Video</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="application/javascript">
+
+    const searchBtn = document.getElementById('search-btn');
+    const mealList = document.getElementById('meal');
+    const mealDetailsContent = document.querySelector('.meal-details-content');
+    const recipeCloseBtn = document.getElementById('recipe-close-btn');
+
+
+    // event listeners
+    searchBtn.addEventListener('click', getMealList);
+    mealList.addEventListener('click', getMealRecipe);
+    recipeCloseBtn.addEventListener('click', () => {
+      mealDetailsContent.parentElement.classList.remove('showRecipe');
+    });
+
+
+    // get meal list that matches with the ingredients
+    function getMealList() {
+      let searchInputTxt = document.getElementById('search-input').value.trim();
+      fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchInputTxt}`)
+        .then(response => response.json())
+        .then(data => {
+          let html = "";
+          if (data.meals) {
+            data.meals.forEach(meal => {
+              html += `
+                    <div class = "meal-item" data-id = "${meal.idMeal}">
+                        <div class = "meal-img">
+                            <img src = "${meal.strMealThumb}" alt = "food">
+                        </div>
+                        <div class = "meal-name">
+                            <h3>${meal.strMeal}</h3>
+                            <a href = "#" class = "recipe-btn">Get Recipe</a>
+                        </div>
+                    </div>
+                `;
+            });
+            mealList.classList.remove('notFound');
+          } else {
+            html = "Sorry, we didn't find any meal!";
+            mealList.classList.add('notFound');
+          }
+
+          mealList.innerHTML = html;
+        });
+    }
+
+
+    // get recipe of the meal
+    function getMealRecipe(e) {
+      e.preventDefault();
+      if (e.target.classList.contains('recipe-btn')) {
+        let mealItem = e.target.parentElement.parentElement;
+        fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.dataset.id}`)
+          .then(response => response.json())
+          .then(data => mealRecipeModal(data.meals));
+      }
+    }
+
+    // create a modal
+    function mealRecipeModal(meal) {
+      console.log(meal);
+      meal = meal[0];
+      let html = `
+        <h2 class = "recipe-title">${meal.strMeal}</h2>
+        <p class = "recipe-category">${meal.strCategory}</p>
+        <div class = "recipe-instruct">
+            <h3>Instructions:</h3>
+            <p>${meal.strInstructions}</p>
+        </div>
+        <div class = "recipe-meal-img">
+            <img src = "${meal.strMealThumb}" alt = "">
+        </div>
+        <div class = "recipe-link">
+            <a href = "${meal.strYoutube}" target = "_blank">Watch Video</a>
+        </div>
+    `;
+      mealDetailsContent.innerHTML = html;
+      mealDetailsContent.parentElement.classList.add('showRecipe');
+    }
+
+  </script>
+
+
+
+</body>
+
+</html>

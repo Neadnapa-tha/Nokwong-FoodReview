@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous">
+        </script>
+
+    <!--เชื่อมcss-->
+    <link type="text/css" rel="stylesheet" href="admincss copy.css">
+
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- เปลี่ยนรูปเเบบฟ้อนภาษาไทย -->
+    <!-- Sriracha font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Chakra+Petch&family=Sriracha&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- IBM font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Chakra+Petch&family=IBM+Plex+Sans+Thai&family=Mali&family=Sriracha&display=swap"
+        rel="stylesheet">
+
+    <!-- Place your kit's code here -->
+    <script src="https://kit.fontawesome.com/e447aff48a.js" crossorigin="anonymous"></script>
+
+    <title> Admin Page </title>
+</head>
+
+<body>
+    <!--Navbar ไงหล่ะ -->
+    <nav>
+        <div class="navbaraaa">
+            <div class="px-3 py-2 border-bottom mb-3">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/Search">Search Restaurant</a></li>
+                        <li><a href="/RecipeMenu">Food Menu</a></li>
+                        <li><a href="/AboutUs">AboutUs</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <!--<a href="Homepage.html"><img src="/Picture/logo_background3.jpg" width="100%"></a>-->
+        </div>
+
+
+    </nav>
+
+    <!--ข้อมูล-->
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-1">
+
+            <div class="col-lg-12 mt-0">
+                <!--ปุ่ม-->
+                <div class="col col-lg px-3 pt-3">
+                    <div class="pagebutton">
+                        <button type="button" class="pagebtn"><a href="/Login"> Login </a></button>
+                        <button type="button" class="pagebtn"><a href="/Register">Sign-up</a></button>
+                        <button type="button" class="pagebtn" id="login_admin"><a href="/admin/LoginAdmin"> Login For Admin </a></button>
+                    </div>
+
+
+                </div>
+                <!--จบปุ่ม-->
+                <!--ใส่เนื้อหาตรงนี้นะะะะ-->
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-1">
+
+                <!--จบปุ่ม-->
+                <div  class="table-responsive border border-dark px-1 py-1 mx-3 my-3">
+                    <h2 class="display-6 text-center mb-4"> L o g i n A d m i n </h2>
+                    <!--ใส่เนื้อหาตรงนี้นะะะะ-->
+                    <form action="/form-submit" method="POST">
+                        <div class="mb-3 px-3">
+                            <label for="exampleFormControlInput1" class="form-label"> Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder=" Email" name="useremail">
+                        </div>
+                        <div class="mb-3 px-3">
+                            <label for="exampleFormControlInput1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Password..." name="password">
+                        </div>
+                        <div class="signbutton" action="">
+                            <button type="submit" class="insertbtn"> Login </button>
+                        </div>
+                    </form>
+                    <br>
+
+                <!--จบเนื้อหาตรงนี้นะะะะ-->
+            </div>
+        </div>
+    </div>
+    <!--จบข้อมูล-->
+</body>
+
+
+
+</html>

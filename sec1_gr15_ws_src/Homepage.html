@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Home&Search.css">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- เปลี่ยนรูปเเบบฟ้อนภาษาไทย -->
+  <!-- Sriracha font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Chakra+Petch&family=Sriracha&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- IBM font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Aboreto&family=Chakra+Petch&family=IBM+Plex+Sans+Thai&family=Mali&family=Sriracha&display=swap"
+    rel="stylesheet">
+
+  <title> Homepage </title>
+</head>
+
+<div>
+  <nav>
+    <div class="navbaraaa">
+        <div class="px-3 py-2 border-bottom mb-3">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/Search">Search Restaurant</a></li>
+                    <li><a href="/RecipeMenu">Food Menu</a></li>
+                    <li><a href="/AboutUs">AboutUs</a></li>
+                </ul>
+
+                <div class="text-end">
+                    <a href="/Login"><button type="button" class="btn">Login</button></a>
+                    <a href="/Register"><button type="button" class="btn">Sign-up</button></a>
+                </div>
+            </div>
+        </div>
+        <!--<a href="Homepage.html"><img src="/Picture/logo_background3.jpg" width="100%"></a>-->
+    </div>
+
+
+</nav>
+
+  <!--เลื่อนๆ-->
+  <main>
+    <div class="container">
+      <div bd-content ps-lg-4>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-label="Slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"
+              class=""></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"
+              class=""></button>
+          </div>
+          <div class="carousel-inner">
+            <!--รูป 1-->
+            <div class="carousel-item active">
+              <img src="https://i.ibb.co/02WT8Dh/1.png" class="d-block w-100" alt="..." height="400">
+            </div>
+            <!--รูป 2-->
+            <div class="carousel-item">
+              <img src="https://i.ibb.co/0X1Kbdy/2.png" class="d-block w-100" alt="..." height="400">
+            </div>
+            <!--รูป 3-->
+            <div class="carousel-item">
+              <img src="https://i.ibb.co/8ckYPMG/3.png" class="d-block w-100" alt="..." height="400">
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor"
+                class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                <path fill-rule="evenodd"
+                  d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+              </svg>
+            </span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor"
+                class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z" />
+                <path fill-rule="evenodd"
+                  d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z" />
+              </svg>
+            </span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <!--เลื่อนๆได้แล้วนะ-->
+
+  <div class="nav-bar-review">
+    <i class="material-icons" style="font-size:36px">restaurant_menu</i>
+    <h4> Cafe Review </h4>
+  </div>
+
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="admin_value"> </div>
+
+  <script type="application/javascript">
+    function getRestaurantHomepage(result) {
+      let name_list = document.querySelector("#admin_value");
+      //   admininfo = "<tr>"
+      //   for (let i in result) {
+      //     admininfo += "<th scope='row' class='text-start'>" + result[i].Firstname + "  " + result[i].Restaurant_Name + "</th>";
+      //     admininfo += "<td>" + result[i].Point + "</td>";
+      //     admininfo += "<td>" + result[i].Category + "</td >";
+      //     admininfo += "<td><a href='http://localhost:3000/updateadmin?id=" + result[i].Admin_ID + "' class='edit'>edit</a></td>";
+      //   }
+      //   document.querySelector("#admin_value").innerHTML = admininfo;
+
+      // }
+      // fetch('http://localhost:3000/RestaurantHomepage')
+      //   .then((response) => response.json())
+      //   .then(results => getRestaurantHomepage(results))
+      //   .catch((err) => console.log(err));
+
+      name_list = " "
+      for (let i in result) {
+        name_list += `
+        <div class="col">
+            <div class="card shadow-sm">
+              <img src=${result[i].Pic1} alt="" height="300px">
+                  <div class ="card-body">
+                    <p class ="card-text"> ${result[i].Restaurant_Name} </p>
+                      <div class ="d-flex justify-content-between align-items-center">
+                        <div class ="btn-group">
+                          <a href="http://localhost:3000/Review?name=${result[i].Restaurant_Name}"><button type ="button" class ="btn btn-sm btn-outline-secondary">View</button></a>
+                        </div>
+                        <small class ="text-muted">
+                          <div class ="reviews">
+                            <i class ="fas fa-star"></i> ${result[i].Point} <br>
+                          </div> ${result[i].Category}
+                        </small>
+                      </div>
+                  </div>
+              </div>
+          </div>`
+      }
+      // console.log(result)
+      // console.log(name_list)
+      document.querySelector('#admin_value').innerHTML = name_list;
+
+    }
+    fetch('http://localhost:3000/RestaurantHomepage')
+      .then(response => response.json())
+      .then(results => getRestaurantHomepage(results))
+      .catch((err) => console.log(err));
+    /*
+    <a id="del" href="#" onclick="delete(id);">link text</a>
+    <a href=" + "'#'" + "class='delete' id='del' onclick="delete("+id+"); >delete</a>*/
+  </script>
+
+  <div class="nav-bar-review">
+    <i class="material-icons" style="font-size:36px">restaurant_menu</i>
+    <h4> Restaurant Review </h4>
+  </div>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="admin_value2"> </div>
+
+  <script type="application/javascript">
+    function getRestaurantHomepage2(result) {
+      let name_list = document.querySelector("#admin_value2");
+      name_list = " "
+      for (let i in result) {
+        name_list += `
+        <div class="col">
+            <div class="card shadow-sm">
+              <img src=${result[i].Pic1} alt="" height="300px">
+                  <div class ="card-body">
+                    <p class ="card-text"> ${result[i].Restaurant_Name} </p>
+                      <div class ="d-flex justify-content-between align-items-center">
+                        <div class ="btn-group">
+                          <a href="http://localhost:3000/Review?name=${result[i].Restaurant_Name}"><button type ="button" class ="btn btn-sm btn-outline-secondary">View</button></a>
+                        </div>
+                        <small class ="text-muted">
+                          <div class ="reviews">
+                            <i class ="fas fa-star"></i> ${result[i].Point} <br>
+                          </div> ${result[i].Category}
+                        </small>
+                      </div>
+                  </div>
+              </div>
+          </div>`
+      }
+      // console.log(result)
+      // console.log(name_list)
+      document.querySelector('#admin_value2').innerHTML = name_list;
+
+    }
+    fetch('http://localhost:3000/RestaurantHomepage2')
+      .then(response => response.json())
+      .then(results => getRestaurantHomepage2(results))
+      .catch((err) => console.log(err));
+  
+  </script>
+
+<div class="nav-bar-review">
+  <i class="material-icons" style="font-size:36px">restaurant_menu</i>
+  <h4> Dessert Review </h4>
+</div>
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="admin_value3"> </div>
+
+<script type="application/javascript">
+  function getRestaurantHomepage3(result) {
+    let name_list = document.querySelector("#admin_value2");
+    name_list = " "
+    for (let i in result) {
+      name_list += `
+      <div class="col">
+          <div class="card shadow-sm">
+            <img src=${result[i].Pic1} alt="" height="300px">
+                <div class ="card-body">
+                  <p class ="card-text"> ${result[i].Restaurant_Name} </p>
+                    <div class ="d-flex justify-content-between align-items-center">
+                      <div class ="btn-group">
+                        <a href="http://localhost:3000/Review?name=${result[i].Restaurant_Name}"><button type ="button" class ="btn btn-sm btn-outline-secondary">View</button></a>
+                      </div>
+                      <small class ="text-muted">
+                        <div class ="reviews">
+                          <i class ="fas fa-star"></i> ${result[i].Point} <br>
+                        </div> ${result[i].Category}
+                      </small>
+                    </div>
+                </div>
+            </div>
+          </div>`
+    }
+    // console.log(result)
+    // console.log(name_list)
+    document.querySelector('#admin_value3').innerHTML = name_list;
+
+  }
+  fetch('http://localhost:3000/RestaurantHomepage3')
+    .then(response => response.json())
+    .then(results => getRestaurantHomepage3(results))
+    .catch((err) => console.log(err));
+
+</script>
+
+  
+  
+
+  <!--กล่องนะนะ-->
+  <!-- <div class="album py-5 bg-white">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/nkBkLm9/image.jpg" alt="" height="100%">
+            <div class="card-body">
+              <p class="card-text"> อบทะเล ศาลายา </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="reviewอบ.html"> <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  </a>
+                </div>
+                <small class="text-muted">
+                  <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    4.5
+                  </div>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/bXbr7XB/Tickled-Pink-Salaya.jpg" height="100%">
+            <div class="card-body">
+              <p class="card-text"> Tickled Pink Salaya </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-muted">
+                  <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    4.5
+                  </div>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/d4g5FNc/image.png" height="100%">
+            <div class="card-body">
+              <p class="card-text"> เนื้อหนัง </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-muted">
+                  <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    4.5
+                  </div>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/30n8NFv/Music-Square.jpg" height="100%">
+            <div class="card-body">
+              <p class="card-text">Music Square</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-muted">
+                  <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    4.5
+                  </div>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/VSDQJvd/20180531-37939-1527751865-833026.jpg" height="100%">
+            <div class="card-body">
+              <p class="card-text"> Dekdoi coffee at jabo </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-muted">
+                  <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    4.5
+                  </div>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/zmVPXkc/kamaboko-coffee-camp-web.jpg" height="100%">
+            <div class="card-body">
+              <p class="card-text"> Kamaboko Coffee Camp </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-muted">
+                  <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    4.5
+                  </div>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/WBQKxwC/Rocha-Cafe-8-topic-w.jpg" height="100%">
+            <div class="card-body">
+              <p class="card-text"> Rocha café </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-muted">
+                  <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    4.5
+                  </div>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/ckPzF7q/20180531-37939-1527752801-808486.jpg" height="100%">
+            <div class="card-body">
+              <p class="card-text"> Posaho Cafe กาแฟเด็กน้อยทำอร่อย </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-muted">
+                  <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    4.5
+                  </div>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://i.ibb.co/GkqJSkY/1-800x600.jpg" height="100%">
+            <div class="card-body">
+              <p class="card-text"> Kept Pier Cafe </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+                <small class="text-muted">
+                  <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    4.5
+                  </div>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://drive.google.com/uc?export=download&id=1tACAdDxnsMCVffq_kpGKnEp4ktWA8OO_" height="100%">
+            <div class="card-body">
+              <p class="card-text">Comming Soon </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://drive.google.com/uc?export=download&id=1tACAdDxnsMCVffq_kpGKnEp4ktWA8OO_" height="100%">
+            <div class="card-body">
+              <p class="card-text">Comming Soon </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://drive.google.com/uc?export=download&id=1tACAdDxnsMCVffq_kpGKnEp4ktWA8OO_" height="100%">
+            <div class="card-body">
+              <p class="card-text">Comming Soon </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+  <!--footer-->
+  <div class="footer">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
+      </div>
+
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#twitter"></use>
+            </svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#instagram"></use>
+            </svg></a></li>
+        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24">
+              <use xlink:href="#facebook"></use>
+            </svg></a></li>
+      </ul>
+
+    </footer>
+  </div>
+
+
+
+
+  </body>
+
+
+
+</html>

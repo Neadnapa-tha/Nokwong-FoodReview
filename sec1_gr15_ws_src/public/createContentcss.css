@@ -1,0 +1,265 @@
+/*body{
+  background-color: #F6F6F8;
+}*/
+.navbaraaa {
+  background-color: #3D3D3D;
+  height: 100%;
+}
+
+.nav-bar-review {
+  text-align: center;
+  margin-top: 4%;
+}
+
+.navbaraaa ul a {
+  color: #ffffff;
+  margin-top: -20px;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbaraaa ul a:hover {
+  color: #b4b4b4;
+}
+
+.reviews {
+  color: #FFBF00;
+}
+
+.navbaraaa button {
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.text-end :hover {
+  background-color: #E00707;
+  color: whitesmoke;
+}
+
+.navbaraaa img {
+  margin-top: -18px;
+}
+
+.card-text {
+  font-family: 'Sriracha', cursive;
+}
+
+.btn-group {
+  font-family: 'Aboreto', cursive;
+  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-family: 'Mali', cursive;
+  font-family: 'Sriracha', cursive;
+}
+
+main .container {
+  margin-top: 10px;
+}
+
+.nav2 {
+  background-color: #3D3D3D;
+  height: 100%;
+}
+
+.signbutton button {
+  background-color: #3D3D3D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.pagebutton button {
+  background-color: #3D3D3D;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.pagebutton button a {
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#sf button {
+  background-color: #3D3D3D;
+  color: #ffffff;
+  border-color: none;
+}
+
+/*
+#sf :hover {
+  background-color: #E00707;
+  color: whitesmoke;
+  border-color: #E00707;
+}*/
+
+#form{
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+/*รูปภาพ*/
+/* picture */
+
+.P1 {
+  display: block;
+  opacity: 0.95; /* ค.สว่าง */
+  width: 45%;
+  height: auto;
+  margin-left: 5%;
+  margin-right: auto;
+  margin-bottom: 2%;
+}
+
+.P2 {
+  display: block;
+  margin-left: 2px;
+  opacity: 0.95; /* ค.สว่าง */
+  width: 22.5%;
+  height: auto;
+}
+
+.P3 {
+  display: block;
+  margin-left: 2px;
+  opacity: 0.95; /* ค.สว่าง */
+  width: 22.5%;
+  height: auto;
+}
+
+.P4 {
+  display: block;
+  margin-left: 2px;
+  opacity: 0.95; /* ค.สว่าง */
+  width: 22.5%;
+  height: auto;
+  margin-bottom: 2%;
+}
+
+.P5 {
+  display: block;
+  margin-left: 2px;
+  opacity: 0.95; /* ค.สว่าง */
+  width: 22.5%;
+  height: auto;
+  margin-bottom: 2%;
+}
+
+img {
+  float: left;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/*...*/
+/* comment */
+.comment {
+  margin-left: 25%;
+  width: 400px;
+  background-color: #292929;
+  padding: 10px 20px;
+  border: 5px;
+  border: solid;
+  border-color: #292929;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.comment .star input{
+  display: none; /* วงกลมหาย */
+}
+
+.star label {
+  font-size: 20px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+  color: #fd4;
+}
+
+input#rate-5:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+
+form header{
+  width: 100%;
+  font-size: 25px;
+  color: #fe7;
+  font-weight: 500;
+  margin: 5px 0 20px 0;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+form .textarea{
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+form .textarea textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border:1px solid #333;
+  background: #222;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+  color: black;
+}
+
+.font_comment{
+  font-family: 'Aboreto', cursive;
+  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-family: 'Mali', cursive;
+  font-family: 'Sriracha', cursive;
+}
+
+
+/* review */
+a {
+  text-decoration: none;
+}
+
+
+.testimonial-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.testimonial-box {
+  width: 500px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  cursor: pointer;  
+  padding: 20px;
+  margin: 15px;
+}
+
+
+/*...*/

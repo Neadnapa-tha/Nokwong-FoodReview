@@ -1,0 +1,84 @@
+.navbaraaa{
+    background-color: #3D3D3D;
+    height: 100%;
+}
+
+.nav-bar-review {
+  text-align: center;
+  margin-top: 4%;
+}
+
+.navbaraaa ul a{
+  color: #ffffff;
+  margin-top: -20px;
+  text-decoration: none; 
+  padding: 10px;
+}
+
+.navbaraaa ul a:hover {
+  color:#b4b4b4;
+}
+
+.reviews{
+  color: #FFBF00;
+}
+
+.navbaraaa button{
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.text-end :hover {
+  background-color: #E00707;
+  color: whitesmoke;
+}
+
+.navbaraaa img{
+  margin-top: -18px;
+}
+
+.card-text {
+  font-family: 'Sriracha', cursive;
+}
+
+.btn-group{
+  font-family: 'Aboreto', cursive;
+  font-family: 'Chakra Petch', sans-serif;
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-family: 'Mali', cursive;
+  font-family: 'Sriracha', cursive;
+}
+
+main .container {
+  margin-top: 10px;
+}
+
+.nav2 {
+  background-color: #3D3D3D;
+}
+
+.pagebutton button{
+  background-color: #3D3D3D;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+
+.pagebutton :hover{
+  background-color: #736f6f;
+}
+
+.pagebutton button a{
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#sf button {
+  background-color: #3D3D3D;
+  color: #ffffff;
+  border-color: none;
+}
