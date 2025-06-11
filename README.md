@@ -146,6 +146,7 @@ npm start
   - Restaurant ID: B_010
   - Restaurant Name: Hill Mare
   - Category: Food
+  - Review Content: สามารถเพิ่มการรีวิวได้ตามต้องการ
   - Day: เปิดทุกวัน
   - Open: 16:00
   - Close: 24:00
